@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leen | Portfolio</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Leen Assayed</h2>
+
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Hello, I'm <span>Leen </span></h1>
+        <p >Software Engineering Student • I design and code simple, functional solutions and I love what I do</p>
+        <a href="#projects" class="btn">View My Work</a>
+
+        <!-- SOCIAL ICONS -->
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/leen-assayed-50134a355" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:leenalsayed422@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Leen426" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section fade-in reveal">
+        <h2>About Me</h2>
+        <p>
+            An aspiring Full Stack Developer
+            with experience in ASP.NET Core MVC and modern web 
+            technologies. I enjoy building clean, functional 
+            applications and continuously developing my skills 
+            in both development and UI/UX design.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section fade-in reveal">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">Bootstrap</div>
+            <div class="skill">HTML5</div>
+             <div class="skill">CSS3</div>
+              <div class="skill">JavaScript</div>
+               <div class="skill">jQuery</div>
+            <div class="skill">Figma</div>
+             <div class="skill">C#</div>
+             <div class="skill">SQL Server</div>
+              <div class="skill">Java</div>
+               <div class="skill">c++</div>
+            
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section fade-in">
+        <h2>Education</h2>
+        <div class="edu-grid">
+ <div class="education-card">
+            <h3>Full Stack Development (ASP.NET Core MVC – .NET 8)</h3>
+            <p>Step by Step for Training and Consulting</p>
+            <span>September 2024 – July 2025</span>
+        </div>
+        <div class="education-card">
+            <h3>Bachelor of Software Engineering</h3>
+            <p>Hashemite university</p>
+            <span>2022 – 2026</span>
+        </div>
+        </div>
+       
+        
+      
+    </section>
+
+    <!-- PROJECTS -->
+   <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="projects-grid" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(300px,1fr)); gap:20px;">
+
+        <div class="project-card reveal" style="padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.3s;">
+            <h3>Admin Client Web App</h3>
+          <br>
+          <br>
+          <br>
+            <br>
+            <a href="https://github.com/Leen426/AdminClientWebApp" target="_blank" style="margin-top:10px; display:inline-block; padding:8px 12px; background-color:#007BFF; color:white; border-radius:5px; text-decoration:none;">View on GitHub</a>
+        </div>
+
+        <div class="project-card reveal" style="padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.3s;">
+            <h3>Employee Management Dashboard</h3>
+            <p>Manage employee data with searchable tables and edit/delete actions.</p>
+            
+            <br>
+            <a href="https://github.com/Leen426/task7" target="_blank" style="margin-top:10px; display:inline-block; padding:8px 12px; background-color:#007BFF; color:white; border-radius:5px; text-decoration:none;">View on GitHub</a>
+        </div>
+
+        <div class="project-card reveal" style="padding:20px; border-radius:10px; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.3s;">
+            <h3>Landing Page</h3>
+            <p>Responsive landing page with modern UI and smooth animations.</p>
+         <br>
+            <br>
+            <a href="https://github.com/Leen426/Bondi-LandingPage" target="_blank" style="margin-top:10px; display:inline-block; padding:8px 12px; background-color:#007BFF; color:white; border-radius:5px; text-decoration:none;">View on GitHub</a>
+        </div>
+
+    </div>
+</section>
+
+<style>
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+</style>
+
+    <!-- CONTACT -->
+
+    
+    <section id="contact" class="section fade-in">
+        <h2>Let’s Connect</h2>
+
+        <form id="contact-form" class="contact-form">
+          
+  <input type="text" name="from_name" placeholder="Your Name" required />
+  <input type="email" name="from_email" placeholder="Your Email" required />
+  <textarea name="message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send Message</button>
+</form>
+
+<p id="form-status"></p>
+
+        </form>
+    </section>
+
+    <!-- EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
